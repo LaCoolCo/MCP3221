@@ -129,10 +129,6 @@ __asm volatile ("nop");
 #ifndef MCP3221_h
 #define MCP3221_h
 
-#if !defined(ARDUINO_ARCH_AVR)
-#error “The MCP3221 library only supports AVR processors.”
-#endif
-
 #include <Arduino.h>
 #include <Wire.h>
 #include "utility/MCP3221_PString.h"
